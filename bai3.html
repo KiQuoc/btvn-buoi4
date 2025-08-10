@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3: Form khảo sát ý kiến</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form khảo sát ý kiến</h1>
+    </header>
+    <main>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+          <div>
+            <label for="fullname">Họ và tên :</label>
+            <input
+              type="text"
+              name="Full-name"
+              id="fullname"
+              placeholder="Họ và tên"
+            />
+          </div>
+          <div>
+            <label for="survey">Mức độ hài lòng: </label>
+            <input type="range" id="survey" name="survey-check" min="0" max="100" />
+          </div>
+          <div>
+            <label for="date-time">Thời gian liên hệ:</label>
+            <input type="time" id="date-time" name="timecall" />
+          </div>
+          <div>
+            <label for="">Kênh thông tin :</label>
+    
+            <label for="fb">
+              <input type="checkbox" id="fb" name="facebook" value="Facebook" />
+              Facebook
+            </label>
+    
+            <label for="i-youtube">
+              <input
+                type="checkbox"
+                id="i-youtube"
+                name="youtube"
+                value="Youtube"
+              />
+              Youtube
+            </label>
+    
+            <label for="i-website">
+              <input
+                type="checkbox"
+                id="i-website"
+                name="website"
+                value="Website"
+              />
+              Website
+            </label>
+            </div>
+          
+            <div>
+                <label for="contribution">Góp ý khác :</label>
+            </div>
+            <div>
+                <label for="messages"></label>
+                <textarea name="i-contribution" id="messages" placeholder="Nhập thông tin"></textarea>
+            </div>
+        
+          <button type="submit">Gửi</button>
+        </form>
+    </main>
+  </body>
+</html>
