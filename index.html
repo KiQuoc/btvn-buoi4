@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng kí tài khoản</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form đăng kí tài khoản</h1>
+    </header>
+    <main>
+      <form
+        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+        method="post"
+      >
+        <div>
+          <label for="i-fullname"> Họ và Tên :</label>
+          <input
+            type="text"
+            name="Fullname"
+            id="i-fullname"
+            placeholder="Họ và tên"
+          />
+        </div>
+
+        <div>
+          <label for="i-email"> Email :</label>
+          <input type="email" name="Email" id="it-email" placeholder=" Email" />
+        </div>
+
+        <div>
+          <label for="i-password"> Mật khẩu : </label>
+          <input
+            type="password"
+            name="Password"
+            id="i-password"
+            placeholder="Mật khẩu"
+          />
+        </div>
+
+        <div>
+          <label for="i-date"> Ngày sinh :</label>
+          <input type="date" name="Date" id="i-date" placeholder="Ngày sinh" />
+        </div>
+
+        <div>
+          <label for="">Giới tính :</label>
+
+          <label>
+            <input type="radio" name="Gender" value="Male" />
+            Nam
+          </label>
+
+          <label for="">
+            <input type="radio" name="Gender" value="female" />
+            Nữ
+          </label>
+          <label for="">
+            <input type="radio" name="Gender" value="other" />
+            Khác
+          </label>
+        </div>
+
+        <div>
+          <label for="">Sở thích :</label>
+          <label>
+            <input type="checkbox" name="Favorite" value="readbook" />
+            Đọc sách
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="Favorite" value="travel" />
+            Du lịch
+          </label>
+
+          <label for="">
+            <input type="checkbox" name="Favorite" value="Sports" />
+            Thể thao
+          </label>
+        </div>
+        <div>
+          <label for="Introduce-yourself"> Mô tả bản thân :</label><br />
+          <textarea
+            name="Introduce_yourself."
+            id="Introduce-yourself"
+            placeholder="Nhập thông tin"
+          ></textarea>
+        </div>
+        <div>
+          <button>Đăng kí</button>
+          <button>Xóa</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
