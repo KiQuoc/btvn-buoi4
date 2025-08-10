@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table border="0" width="50%" cellspacing="0" cellpadding="10">
+            <tr>
+                <th colspan="2">
+                    <h2>Novell Services Login</h2>
+                </th>
+            </tr>
+            <tr>
+                <td><label for="i_username">Username:</label></td>
+                <td><input type="text" name="username" id="i_username" size="30" /></td>
+            </tr>
+            <tr>
+                <td><label for="i_pass">Password:</label></td>
+                <td><input type="password" name="pass" id="i_pass" size="30" /></td>
+            </tr>
+            <tr>
+                <td><label for="i_city">City of Employment:</label></td>
+                <td><input type="text" name="city" id="i_city" size="30" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="i_webServer">Web server:</label>
+                </td>
+                <td>
+                    <select name="web_server" id="i_webServer">>
+                        <option value="0">--Choose a server--</option>
+                        <option value="1">Server 1</option>
+                        <option value="2">server 2</option>
+                        <option value="3">Server 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Please specify your role:</td>
+                <td>
+                    <label>
+                        <input type="radio" value="admin" name="admin" />Admin
+                    </label> <br />
+                    <label>
+                        <input type="radio" value="engineer" name="engineer" />Engineer
+                    </label><br />
+                    <label>
+                        <input type="radio" value="manager" name="manager" />Manager
+                    </label><br />
+                    <label><input type="radio" value="guest" name="guest" />Guest
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Single Sign-on to the following:</td>
+                <td>
+                    <label>
+                        <input type="checkbox" value="mail" name="sign-mail" />Mail
+                    </label> <br />
+                    <label>
+                        <input type="checkbox" value="payroll" name="sign-payroll" />Payroll
+                    </label> <br />
+                    <label>
+                        <input type="checkbox" value="self-service" name="sign-self-service" />Self-service
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button type="submit" name="login">Login</button>
+                    <button type="reset" name="reset">Reset</button>
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
