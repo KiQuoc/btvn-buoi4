@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 5 :Form liên hệ nhiều bước</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form liên hệ nhiều bước</h1>
+    </header>
+    <main>
+      <form
+        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+        method="post"
+      >
+        <fieldset>
+          <legend>Thông tin cá nhân</legend>
+          <table>
+            <tr>
+              <th><label for="Full_name">Họ và tên :</label></th>
+              <th>
+                <input
+                  type="text"
+                  id="Full_name"
+                  name="Fullname"
+                  placeholder="Họ và tên"
+                />
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <label for="Email">Email :</label>
+              </th>
+              <td>
+                <input
+                  type="email"
+                  id="Email"
+                  name="EMAIL"
+                  placeholder="Email"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th><label for="phone_number">Số điện thoại :</label></th>
+              <td>
+                <input
+                  type="number"
+                  id="phone_number"
+                  name="phone-number"
+                  placeholder="Nhập thông tin"
+                />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Thông tin yêu cầu</legend>
+          <table>
+            <tr>
+              <th><label for="request">Loại yêu cầu :</label></th>
+              <td>
+                <select name="request-1" id="request">
+                  <option value="0">Hỗ trợ kĩ thuật</option>
+                  <option value="1">Tư vấn khách hàng</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label>Mô tả :</label>
+              </th>
+              <td>
+                <label for="description">
+                  <textarea name="i-description" id="description"></textarea>
+                </label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Thông tin bổ sung</legend>
+          <table>
+            <tr>
+              <td>
+                <input
+                  type="checkbox"
+                  id="promotion-email"
+                  name="promotion_email"
+                />Nhận email khuyến mại
+              </td>
+              <th><label for="promotion-email"></label></th>
+            </tr>
+            <tr>
+              <th><label for=""></label>Cách thức liên hệ :</th>
+              <td>
+                <label for="email_2"></label>
+                <input type="checkbox" id="email_2" name="Email" />Email
+              </td>
+              <td>
+                <label for="Phone"></label>
+                <input type="checkbox" id="phone" name="Your_phone" />Điện thoại
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <button type="submit">Gửi thông tin</button>
+      </form>
+    </main>
+  </body>
+</html>
